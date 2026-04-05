@@ -35,4 +35,8 @@
         align-items: center;
         gap: 100px;
     }
+
+    .cover-discord{
+        max-width: 100px;
+    }
 }
