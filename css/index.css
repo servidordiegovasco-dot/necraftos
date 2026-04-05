@@ -22,11 +22,6 @@ body{
      3px  3px 0 #000;
 }
 
-#steve{
-    width: 60px;
-    min-width: 50px;
-}
-
 #capa{
     background-position: 0 0;
     width: 100%;
@@ -51,8 +46,9 @@ body{
     display: flex;
     gap: 20px;
     justify-content: center;
-    background-color: rgba(11, 1, 40, 0.386);
-    backdrop-filter: blur(10px);
+    background-color: rgba(23, 8, 39, 0.386);
+    backdrop-filter: blur(1px);
+    align-items: center;
 }
 
 #menu div{
@@ -60,6 +56,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    width: fit-content;
     padding: 10px;
 }
 
