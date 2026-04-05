@@ -18,3 +18,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: cursivo;
+    src: url('../fonts/ComicNeue-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
