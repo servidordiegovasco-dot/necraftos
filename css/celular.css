@@ -1,0 +1,29 @@
+@media (max-width: 480px) {
+    #steve{
+        width: 40px;
+    }
+
+    #titulo a{
+       font-size: 2rem; 
+    }
+
+    #capa{
+        min-width: none;
+        height: 15vh;
+        animation: capa 40s infinite;
+        font-size: 1.3rem;
+    }
+
+    #menu{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #menu div{
+        flex: 0;
+    }
+
+    #menu a{
+        font-size: 1rem;
+    }
+}

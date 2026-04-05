@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/tutorial.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/animacoes.css">
+    <link rel="stylesheet" href="/css/celular.css">
+</head>
+<body>
+    <div id="cabecalho">
+        <div id="titulo"><a href="/">necraftos</a></div>
+        <div>
+            <img id="steve" src="/imagens/steve.png" alt="">
+        </div>
+
+    </div>
+    
+    <div id="menu">
+        <a href="/paginas/info-server.html"><div>INFORMAÇÕES DO SERVER</div></a>
+        <a href="/paginas/tutorial.html"><div>TUTORIAL DO SERVER</div></a>
+        <a href="/paginas/info-mundos.html"><div>IFORMAÇÕES DOS MUNDOS</div></a>
+    </div>
+
+    <div id="capa">
+        <p>tutorial<br></p>
+    </div>
+
+    <div class="corpo-texto-wrape">
+        <div class="corpo-texto">
+            
+            
+            
+            <p><span>📖 Tutorial Completo dos Plugins</span>
+Bem-vindo ao tutorial oficial do servidor!
+Aqui você encontra tudo sobre os plugins que usamos. Leia com calma e divirta-se!</p>
+<p>
+
+    
+    
+    <span>AuthSystem (Sistema de Login)</span>
+O que faz:
+Plugin leve de autenticação. Ao entrar no servidor pela primeira vez você precisa se registrar com uma senha. Depois disso, toda vez que entrar tem que fazer login. Protege contra roubo de conta.
+Recursos
+</p>
+<p>Senhas criptografadas (SHA-256 + salt único)
+Jogadores não logados não podem:
+Falar no chat
+Usar comandos (exceto os de login)
+Quebrar/colocar blocos
+Interagir com o mundo</p>
+<p>Expulsão automática após 2 minutos sem login</p>
+<p>Comandos (Jogador)</p>
+<p><b>/register "senha" "senha"</b> → Cria sua conta (só na primeira vez) <br>
+<b>/login "senha"</b> ou <b>/l "senha"</b> → Faz login <br>
+<b>/changepassword "senha_antiga" "nova_senha" "nova_senha"</b> → Troca de senha</p> <br>
+
+    
+    
+    <span>BlockLocker (Trava de Blocos)</span>
+O que faz:
+Protege baús, fornalhas, portas, dispensers, hoppers e outros blocos usando placas simples.
+Como usar
+</p>
+<p>Coloque uma placa encostada no bloco que quer proteger.
+O plugin automaticamente escreve: <br>
+Linha 1: <b>[Private]</b> <br>
+Linha 2: Seu nome</p>
+<p>Para adicionar amigos → escreva o nome deles nas linhas 3 e 4.
+Para mais de 2 amigos → coloque uma segunda placa com <b>[More Users]</b> na linha 1.</p>
+<p>Tags especiais na placa:</p>
+<p><b>[Everyone]</b> → Todo mundo pode usar <br>
+<b>[Redstone]</b> → Permite redstone/hoppers <br>
+<b>[Timer:X]</b> → Porta fecha automaticamente após X segundos (0 = nunca) <br>
+<b>[MyGroup]</b> → Dá acesso ao grupo (Towny, Factions, etc.) <br>
++MyGroup+ → Só líderes do grupo</p>
+<p>Comandos</p>
+<p><b>/blocklocker reload</b> ou <b>/bl reload</b> → Recarrega as configurações</p>
+
+
+
+<span>DayCounterPlus (Contador de Dias)</span>
+O que faz:
+Mostra o dia atual do mundo, horário e coordenadas em BossBar ou ActionBar. Anuncia quando um novo dia começa.
+Comandos (Jogador)
+</p>
+<p><b>/day</b> ou <b>/day check</b> → Mostra dia, horário e mundo atual <br>
+<b>/day toggle</b> → Liga/desliga o display (BossBar ou ActionBar)</p>
+
+
+
+<span>DeathChests+ (Bau da Morte)</span>
+O que faz:
+Ao morrer, cria um baú no local da morte com todos os seus itens + XP (opcional). Você nunca perde nada!
+Recursos
+</p>
+
+
+
+
+<span>DeathWaypoint (Ponto da Morte)</span>
+O que faz:
+Sistema avançado que ajuda você a voltar para o local da morte com bússola, partículas, holograma, ActionBar e alertas de despawn.
+Recursos
+</p>
+<p>Bússola automática ao respawn (aponta para a morte)
+Partículas (pilar de almas, círculo de fogo, feixe de beacon, trilha)
+Holograma só visível para você
+Distância em tempo real na ActionBar (verde/amarelo/vermelho)
+Alertas de despawn dos itens (1 min e 30 seg)
+Até 5 mortes salvas ao mesmo tempo
+Limpeza automática ao chegar no local</p>
+<p>Comandos</p>
+<p><b>/deaths</b> → Lista todas as suas mortes <br>
+<b>/deaths</b> <1-5> → Muda a bússola para outra morte <br>
+<b>/deaths</b> ignore → Remove a bússola atual <br>
+<b>/deaths</b> toggle → Liga/desliga todo o sistema <br>
+<b>/deaths</b> status → Mostra informações mesmo com toggle off <br>
+<b>/deaths</b> clear → Apaga todas as mortes <br>
+<b>/deathtp</b> [número] → Teleporta para uma morte</p>
+
+
+
+<span>GriefPrevention (Protecao Anti-Grief)</span>
+O que faz:
+O melhor sistema de proteção de terreno do Minecraft. Você cria claims com uma pá dourada e ninguém consegue griefar sua base.
+Como criar claim
+</p>
+<p>Pegue uma pá dourada
+Clique com o botão direito no chão para marcar o primeiro canto
+Clique novamente para marcar o segundo canto</p>
+<p>Principais Recursos</p>
+<p>Claims impossíveis de griefar (nenhum dano, roubo, explosão, pistão, etc.)
+Proteção automática de pets e itens da morte
+Anti-spam excelente (mute, kick, ban)
+Restore Nature (conserta grief com um clique)
+Sub-claims e permissões granulares
+Nova reclamação automática ao colocar o primeiro baú</p>
+<p>Comandos (Jogador)</p>
+<p><b>/trust</b> "jogador" ou <b>/t</b> → Dá permissão total <br>
+<b>/accesstrust</b> "jogador" ou <b>/at</b> → Permissão para botões/portas/camas <br>
+<b>/containertrust</b> "jogador" ou <b>/ct</b> → Permissão para baús e animais <br>
+<b>/untrust "jogador"</b> ou <b>/ut</b> → Remove permissão <br>
+<b>/trustlist</b> → Lista quem tem permissão <br>
+<b>/abandonclaim</b> → Apaga o claim onde você está <br>
+<b>/abandonallclaims</b> → Apaga TODOS os seus claims <br>
+<b>/claimslist</b> → Mostra seus claims e blocos restantes <br>
+<b>/buyclaimblocks</b> → Compra mais blocos de claim <br>
+<b>/sellclaimblocks</b> → Vende blocos de claim <br>
+<b>/trapped</b> → Teleporta para fora se ficar preso <br>
+<b>/unlockdrops</b> → Libera seus itens da morte para outros pegarem</p>
+        </div>
+    </div>
+</body>
+</html>
